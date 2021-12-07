@@ -1,0 +1,57 @@
+Table \ref{results} is a summary of the results obtained from each model. 
+	\begin{table}[H]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Model & Hyperparameter & Accuracy\\
+			\hline 
+			\hline
+			Logistic regression & c=0.01 & 95.26\%\\
+			\hline
+			\multirow{2}{*}{XGBoost}  & \small{max\_depth = 5} & \multirow{2}{*}{96.97\%}\\
+			& \small{learning\_rate= 0.1} & \\
+			\hline
+			KNN (L2 Norm) & k = 21 & 96.45\%\\
+			\hline
+			\multirow{2}{*}{Decision Tree}  & \small{max\_depth = 6} & \multirow{2}{*}{96.61\%}\\
+			& \small{criterion = ‘gini’} & \\
+			\hline
+			\multirow{3}{*}{Random Forest} & \small{max\_depth = 10} & \multirow{3}{*}{96.97\%}\\
+			& \small{criterion = ‘gini’}& \\
+			& \small{n\_estimators= 50}& \\
+			\hline
+			K-fold Cross-Validation & N/A & 96.11\% \\
+			with Bagging & & (size = 60)\\
+			\hline		
+		\end{tabular}
+		\caption{Best Hyperparameters and Test Accuracy for each Method (residency included)}\label{results}
+	\end{table}
+
+
+
+able \ref{results} is a summary of the results obtained from each model. 
+	\begin{table}[H]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Model & Hyperparameter & Accuracy\\
+			\hline 
+			\hline
+			Logistic regression & c=1 & 69.78\%\\
+			\hline
+			\multirow{2}{*}{XGBoost}  & \small{max\_depth = 5} & \multirow{2}{*}{70.39\%}\\
+			& \small{learning\_rate= 0.1} & \\
+			\hline
+			KNN (L2 Norm) & k = 55 & 69.59\%\\
+			\hline
+			\multirow{2}{*}{Decision Tree}  & \small{max\_depth = 5} & \multirow{2}{*}{69.95\%}\\
+			& \small{criterion = ‘gini’} & \\
+			\hline
+			\multirow{3}{*}{Random Forest} & \small{max\_depth = 10} & \multirow{3}{*}{70.31\%}\\
+			& \small{criterion = ‘entropy’}& \\
+			& \small{n\_estimators= 100}& \\
+			\hline
+			K-fold Cross-Validation & N/A & 69.14\% \\
+			with Bagging & & (size = 60)\\
+			\hline		
+		\end{tabular}
+		\caption{Best Hyperparameters and Test Accuracy for each Method (residency excluded)}\label{results}
+	\end{table}
